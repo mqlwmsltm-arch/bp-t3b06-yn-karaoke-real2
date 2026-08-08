@@ -1,167 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
-    }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
-  <link rel="canonical" href="https://yeonnam-room-song.node-link.shop/posts/normal-1.html">
-  <meta property="og:url" content="https://yeonnam-room-song.node-link.shop/posts/normal-1.html">
+<meta charset="UTF-8">
+<title>연남 가라오케 찐후기</title>
+<link rel="canonical" href="https://yeonnam-room-song.node-link.shop/posts/normal-1.html">
+  <meta name="bpaas-link-purpose" content="link-juice">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:url" content="https://yeonnam-room-song.node-link.shop/posts/normal-1.html">
+  <meta property="og:title" content="연남 가라오케 찐후기">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="../index.html">HOME</a> | <a href="../sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h1>
-      <div class="article-body">
-        세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체험하게 만듭니다. 이를 통해 카메라는 물리적 현실의 기록자가 아닌 흘러가는 존재론적 시간을 스크린에 온전히 봉인하는 철학적 매개로 기능하게 됩니다.<br><br>타르코프스키의 삶과 독보적인 필모그래피의 인문학적 배경은 <a href="https://ko.wikipedia.org/wiki/%EC%95%88%EB%93%9C%EB%A0%88%EC%9D%B4_%ED%83%80%EB%A5%B4%EC%BD%94%ED%94%84%EC%8A%A4%ED%82%A4" target="_blank" style="color: #64748b; text-decoration: underline;">위키백과: 안드레이 타르코프스키 예술 일대기</a>를 통해 거장이 걸어온 고독한 예술적 여정을 정교하게 이해하실 수 있습니다.
-      </div>
-      
-      
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="../sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+<h1>연남 가라오케 찐후기</h1>
+<p>연남 일대는 조용하고 감성적인 분위기가 흐르는 공간이 많습니다. 이런 환경 속에서 음악을 즐기거나 친구와 대화를 나누기 좋은 장소가 많아 방문을 고려해 볼 수 있습니다. 주로 개인 방 형태의 공간을 활용한 노래방이나 카라오케 시설이 있으며, 다양한 음악 장르를 마음껏 감상할 수 있는 환경을 갖추고 있습니다. 공간 내부에는 아늑한 인테리어와 함께하는 음악 감상이 중심이 되므로, 스트레스를 해소하거나 여유를 즐기는 목적으로 적합합니다.</p>
+<p>연남 가라오케 찐후기에서는 실제로 방문한 사람들의 경험을 바탕으로 정보와 조언을 제공합니다. 노래방은 단순히 노래를 부르는 공간을 넘어, 주변에 함께 할 사람들과 즐거운 시간을 보내는 장소로 자리 잡았습니다. 따라서 공간의 분위기나 음악 반주기, 내부 청결도 등 여러 요소가 종합적으로 고려됩니다. 특히 연남의 가라오케는 주변 거리나 건물 외관, 내부 인테리어까지 일관된 느낌으로 유지되어 방문객에게 일관된 만족을 주려는 시도가 돋보입니다.</p>
+<p>또한, 연남의 가라오케는 다양한 이용 목적에 맞춰 공간을 준비하고 있습니다. 소규모 친구 모임부터 사적 대화를 나누고 싶은 경우까지 다양한 상황별로 적합한 시설이 마련되어 있어 이용자가 선택의 폭을 넓힐 수 있습니다. 이런 점에서 관련 정보를 찾아보는 경우, 실제로 어떤 시설이 있는지, 어떤 분위기를 가지고 있는지 상세하게 확인할 수 있는 채널이 마련되어 있습니다. 관련 정보는 <a class="anchor-link" href="https://sangsu-hotplace-info.xyz/" data-bpaas-link-target="tokyo-pest">정보 페이지</a> 에서 확인할 수 있습니다.</p>
+<p>결국 연남 가라오케는 음악을 통해 즐거운 시간을 보내고 싶은 사람에게 적합한 장소입니다. 노래방 방문 시 중요한 것은 공간의 분위기, 음악의 다양성, 그리고 함께 하는 사람들과의 조화입니다. 따라서 방문 전 충분한 정보를 확인하고, 자신의 목적에 맞는 최적의 선택을 하는 것이 중요합니다. 이렇게 준비된 방문은 더 만족스러운 경험을 만들 수 있으며, 연남이라는 지역의 매력을 더욱 풍부하게 느낄 수 있도록 도와줍니다.</p>
 </body>
 </html>
